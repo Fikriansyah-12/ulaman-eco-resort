@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import TextScroll from "@/components/TextScroll";
+import AboutImage from "@/components/AboutImage";
 
 export default function VideoBackground() {
   const [showIframe, setShowIframe] = useState(false);
@@ -76,9 +77,10 @@ export default function VideoBackground() {
 
       </section>
 
-      <section className="w-full min-h-screen bg-[#F5EFE3]">
-        <div className="mx-auto max-w-6xl px-6 py-14">
+      <section className="w-full bg-[#F5EFE3]">
+        <div className="mx-auto max-w-6xl px-6 py-12">
           <TextScroll />
+          <AboutImage/>
         </div>
       </section>
     </main>
